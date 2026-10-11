@@ -7,12 +7,18 @@ int main()
 
     char x; 
     scanf("%c", &x);
-    // printf("%c", x);
+
 
     if((x >= 'a' && x<='z') || (x >= 'A' && x<='Z')){
-     printf("ALPHA");
+     printf("ALPHA\n");
+      if(islower(x)){
+      printf("IS SMALL");
     }
-    else if(x >=0 && x<=9){
+    else{
+         printf("IS CAPITAL");
+    }
+    }
+    else if(x >='0' && x<='9'){
     printf("IS DIGIT");
     }
 
